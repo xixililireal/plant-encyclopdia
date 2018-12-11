@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>登录</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	*{margin:0;padding:0;}
+	body{
+		/*background-color: #fcc;*/
+		background-image: url(8.jpg) ;
+		background-size: 1366px 768px;
+		background-position: fixed;
+	}
+	
+
+	#denglu{
+		width:655px;
+		height: 270px;
+		/*border:1px solid black;*/
+		margin:0 auto;
+		margin-top:250px;
+	 	position:relative;
+	 	/*background-image: url(背景图6.jpg) ;*/
+		
+	}
+	#denglu h3{
+		font-size: 24px;
+		background-color:#ccc;
+		border:1px solid black;
+	}
+
+	#denglu .denglu-tp{
+		width: 500px;
+		height: 300px;
+		margin-top:10px;
+		/*overflow:hidden;*/
+	}
+	#denglu .denglu-jm{
+		position:absolute;
+		top:32px;
+		left:420px;
+		width:236px;
+		height: 220px;
+		font-size:20px;
+		/*border:1px solid red;*/
+		margin-top:0px;
+	}
+	#denglu .denglu-jm a{
+		text-align: right;
+		color:#33f;
+		font-size:16px;
+	}
+	</style>
+	<script type="text/javascript">
+	function check(){
+		var a=document.form1.text.value;
+		var b=document.form1.pass.value;
+		if(a=="")
+		{
+			alert("账号不能为空!");
+			document.form1.text.focus();
+			return false;
+		}
+		else if(b==""){
+			alert("密码不能为空!");
+			document.form1.pass.focus();
+			return false;
+		}
+      /*if(document.form1.text1.value="")
+      {
+      	window.alert("请输入账号!");
+      	document.form1.text1.focus();
+      	return false;
+      }
+      if(document.form1.pass.value="")
+      {
+      	window.alert("请输入密码!");
+      	document.form1.pass.focus();
+      	return false;
+      }
+     */
+     }
+	</script>
+</head>
+<body>
+
+<div id="denglu">
+<h3 align="left">登录植物大百科账号</h3>
+<!----><div class="denglu-tp">
+<img src="1.jpg" width="400px" height="225px"> 
+</div>
+<div class="denglu-jm">
+<form  name="form1" method="post" action="大作业1.html" onsubmit="return check();" >
+账号: <br><input type="text" name="text"   style="width:230px; height: 30px;">
+<br><br>
+密码：<br><input type="password" name="pass"  style="width:230px; height: 30px;"><br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="submit" value="登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录"  style="width:130px; height: 30px; background-color: blue; color: white; font-size:20px;">&nbsp;&nbsp;
+<!--<input type="submit"  value="取&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;消" style="width:100px; height: 30px; background-color: blue; color: white; font-size:20px;">
+&nbsp;&nbsp;&nbsp;&nbsp;-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--<input type="submit" name="submit2" value="注册" style="width:100px; height: 30px; background-color: blue; color: white; font-size:20px;">-->
+<a href="注册.html">立即注册</a>|
+<a href="大作业1.html">返回</a>
+</form>
+</div>
+</div>
+
+</body>
+</html>
